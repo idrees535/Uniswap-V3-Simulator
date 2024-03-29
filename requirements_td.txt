@@ -1,0 +1,8 @@
+eth-brownie
+enforce_typing
+ipykernel
+pandas 
+matplotlib
+seaborn
+requests
+py-solc-x
