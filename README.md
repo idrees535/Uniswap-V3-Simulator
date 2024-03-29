@@ -4,7 +4,7 @@ The Uniswap V3 Simulator is a comprehensive tool designed to simulate the functi
 It features several helper functions, such as util, constants, and tx_dict, among others. The core components of this simulator are `UniV3Simulator.py` and `analysis.py`:
 
 - `UniV3Simulator.py`: Manages the deployment of V3 core and token contracts, and contains functions for interacting with Uniswap V3 pools and tokens as well as retrieving pool state information.
-- `analysis.py`: Utilized for conducting various analyses, leveraging the functions defined in `UniV3Simulator.py`.
+- `analysis.ipynb`: Utilized for conducting various analyses, leveraging the functions defined in `UniV3Simulator.py`.
 
 ## Setup Instructions
 
@@ -14,7 +14,7 @@ It features several helper functions, such as util, constants, and tx_dict, amon
 
 ### Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/idrees535/Uniswap-V3-Simulator.git
 ```
 
 ### Create a Virtual Environment
