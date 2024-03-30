@@ -1,6 +1,8 @@
 ## Introduction
 The Uniswap V3 Simulator is a comprehensive tool designed to simulate the functionality of Uniswap V3 pools locally. By deploying Uniswap V3 core contracts and token contracts on Ganache using Ether Brownie, users can interact with these contracts via web3.py and Brownie. The simulator is equipped to perform a variety of actions including creating pools, initializing pools, adding and removing liquidity, collecting fees, performing swaps, and retrieving the global, tick, and positions state of the pool.
 
+In this medium article different components of analysis are discussed: https://medium.com/@idrees535/uniswap-v3-simulator-streamline-your-tokens-pool-launch-with-liquidity-analysis-fa4346d11248
+
 It features several helper functions, such as util, constants, and tx_dict, among others. The core components of this simulator are `UniV3Simulator.py` and `analysis.py`:
 
 - `UniV3Simulator.py`: Manages the deployment of V3 core and token contracts, and contains functions for interacting with Uniswap V3 pools and tokens as well as retrieving pool state information.
@@ -71,3 +73,4 @@ The simulator's architecture is designed to facilitate local simulation of Unisw
   mint_tx_receipt = ali_usdc_pool1.add_single_sided_liquidity(GOD_ACCOUNT, price_to_valid_tick(price_lower), price_to_valid_tick(price_upper), liquidity_amount, b'')
   tx_dict = ali_usdc_pool1.swap_token0_for_token1(GOD_ACCOUNT, swap_amount, data=b'')
   ```
+
